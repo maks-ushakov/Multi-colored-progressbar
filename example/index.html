@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>HTML5 Site</title>
+		<style>
+			#range {
+			  border: 1px dotted green;
+			  width: 300px;
+			  height: 160px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+			<input type="range" min="0" max="100" step="1" value="20">
+			<div>
+				<canvas id="range" data-value="20"></canvas>
+			</div>
+			</header>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
